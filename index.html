@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="./styles.css" />
+	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<title>The Instagram Photo Feed (with Bootstrap)</title>
+</head>
+
+<body>
+
+	<!-- Barra de navegación -->
+
+	<nav class="row navbar navbar-expand-lg navbar-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand text-secondary" href="#">
+				<i class="fab fa-instagram iconoInsta"></i>Instagram Photo Feed Virginia</a>
+		</div>
+
+		<!-- Button con modal -->
+
+		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+  Create a new post
+</button>
+
+		<!-- Modal -->
+
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content p-2">
+					<div class="form-group">
+						<label for="message-text" class="col-form-label"></label>
+						<textarea class="form-control" id="message-text"></textarea>
+						<button type="button" class="btn btn-outline-secondary mt-2 mb-4"><i class="fas fa-camera"></i></button>
+						<button type="button" class="btn btn-outline-secondary mt-2 mb-4"><i class="fas fa-map-marker-alt"></i></button>
+
+
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-light btn-outline-secondary" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-success">Publish</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Dropdown Settings -->
+
+		<div class="dropdown mr-5">
+			<button class="btn2 dropdown-toggle text-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <i class="fas fa-cog"></i>
+				</button>
+
+			<div class="dropdown-menu dropdown-menu-right mt-3" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<a class="dropdown-item" href="#">Something else here</a>
+				<hr />
+				<a class="dropdown-item" href="#">Log Out</a>
+			</div>
+		</div>
+	</nav>
+
+	<!-- buttons para modo visualización grid o individual -->
+
+	<div class="container-fluid navGridCard">
+		<div class="row justify-content-center">
+			<div class="col-12">
+				<ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+					<li class="nav-item" id="backColor">
+						<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+							aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i></a>
+					</li>
+					<li class="nav-item" id="backColor">
+						<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+							aria-controls="pills-profile" aria-selected="false"><i class="fas fa-square"></i></a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+    <!-- GRID content -->
+	<div class="tab-content" id="pills-tabContent">
+		<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+			<div class="row">
+				<div class="col-4 columna">
+					<img class="img-fluid photo" src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="photo foodie">
+                </div>
+					<div class="col-4 columna">
+						<img class="img-fluid photo" src="https://images.unsplash.com/photo-1477336229416-9d67406e73bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="photo foodie">
+                    </div>
+						<div class="col-4 columna">
+							<img class="img-fluid photo" src="https://images.unsplash.com/photo-1523554888454-84137e72c3ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="photo foodie">
+                    </div>
+						</div>
+						<div class="row">
+                        <div class="col-4 columna">
+					<img class="img-fluid photo" src="https://images.unsplash.com/photo-1551214359-b81f66a605b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="photo foodie">
+                </div>
+					<div class="col-4 columna">
+						<img class="img-fluid photo" src="https://images.unsplash.com/photo-1560579499-ab30d29dfd9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="photo foodie">
+                    </div>
+						<div class="col-4 columna">
+							<img class="img-fluid photo" src="https://images.unsplash.com/photo-1494252713559-f26b4bf0b174?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="photo foodie">
+                    </div>
+                        
+                        
+                        </div>
+						<div class="row">
+                        <div class="col-4 columna">
+					<img class="img-fluid photo" src="https://images.unsplash.com/photo-1492037766660-2a56f9eb3fcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="photo">
+                    </div>
+					<div class="col-4 columna">
+						<img class="img-fluid photo" src="https://images.unsplash.com/flagged/photo-1501421018470-faf26f6b1bef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="photo foodie">
+                    </div>
+						<div class="col-4 columna">
+							<img class="img-fluid photo" src="https://images.unsplash.com/photo-1512952398228-c6bda07ac7b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="photo foodie">
+                    </div>
+                     
+                        </div>
+
+					</div>
+
+					<!-- CARDS content -->
+					<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+						<!-- CARD 01 -->
+					
+						<div class="row justify-content-center">
+							<div class="card">
+								<div class="card-header">
+									<div class="row">
+										<h5 class="col-8 tituloCard">My first post</h5>
+										<h5 class="col-4 datePost">12/14</h5>
+									</div>
+								</div>
+								<img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" class="card-img-top" alt="photo grafiti.">
+								<div class="card-body">
+									<h5>23 likes</h5>
+									<p class="card-text">
+										<b>This is my first project using Boostrap 4, an exercise done within the 4Geeks Academy Bootcamp to become a Full Stack Developer.</b><br> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+															magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+															consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+								</div>
+								<div class="row footerCard">
+									<i class=" col-1 fas fa-heart heart" id="Footer"></i>
+									<p class="col-7" id="Footer">Comment here...</p>
+									<i class="col-4 fas fa-ellipsis-v ellipsis" id="Footer"></i>
+								</div>
+							</div>
+						</div>
+						<!-- CARD 02 -->
+						<div class="row justify-content-center">
+							<div class="card">
+								<div class="card-header">
+									<div class="row">
+										<h5 class="col-8 tituloCard">My second post</h5>
+										<h5 class="col-4 datePost">12/14</h5>
+									</div>
+								</div>
+								<img src="https://images.unsplash.com/photo-1477336229416-9d67406e73bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" class="card-img-top" alt="photo grafiti.">
+								<div class="card-body">
+									<h5>23 likes</h5>
+									<p class="card-text">
+										<b>This is my first project using Boostrap 4, an exercise done within the 4Geeks Academy Bootcamp to become a Full Stack Developer.</b><br> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+															magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+															consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+								</div>
+								<div class="row footerCard">
+									<i class=" col-1 fas fa-heart heart" id="Footer"></i>
+									<p class="col-7" id="Footer">Comment here...</p>
+									<i class="col-4 fas fa-ellipsis-v ellipsis" id="Footer"></i>
+								</div>
+							</div>
+						</div>
+                        <!-- CARD 03 -->
+						<div class="row justify-content-center thirdCard">
+							<div class="card">
+								<div class="card-header">
+									<div class="row">
+										<h5 class="col-8 tituloCard">My third post</h5>
+										<h5 class="col-4 datePost">12/14</h5>
+									</div>
+								</div>
+								<img src="https://images.unsplash.com/photo-1523554888454-84137e72c3ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" class="card-img-top" alt="photo grafiti.">
+								<div class="card-body">
+									<h5>23 likes</h5>
+									<p class="card-text">
+										<b>This is my first project using Boostrap 4, an exercise done within the 4Geeks Academy Bootcamp to become a Full Stack Developer.</b><br> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+															magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+															consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+								</div>
+								<div class="row footerCard">
+									<i class=" col-1 fas fa-heart heart" id="Footer"></i>
+									<p class="col-7" id="Footer">Comment here...</p>
+									<i class="col-4 fas fa-ellipsis-v ellipsis" id="Footer"></i>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+                    
+                   
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+					integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+					crossorigin="anonymous">
+				</script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+					integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+					crossorigin="anonymous">
+				</script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+					integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+					crossorigin="anonymous">
+				</script>
+</body>
+
+</html>

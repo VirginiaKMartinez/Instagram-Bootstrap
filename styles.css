@@ -1,0 +1,128 @@
+
+body{
+    background-color: #E0DFDF;
+}
+
+hr{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand{
+    font-family: 'Merienda One';
+}
+
+.navbar{
+    background-color: #ECECEC;
+    border-bottom: 1px #8b8b8b solid;
+    
+}
+
+
+.col-12{
+    background-color: #fdfdfd;
+}
+
+.btn2{
+    background-color: #ECECEC;
+    border: none;
+    margin-left: 16px;
+}
+
+.iconoInsta{
+    font-size: 28px;
+    margin-right: 8px;
+}
+
+
+.columna{
+    padding: 0;
+}
+.nav{
+    background-color: #fdfdfd;
+    padding: 8px;
+    
+}
+
+.nav-link{
+    color: #6D6D6D;
+}
+
+.nav-item{
+
+    color: #fdfdfd;
+}
+
+.nav-pills .nav-link {
+   
+    color: #6D6D6D;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #6D6D6D;
+}
+
+.card{
+    width: 640px;
+    height: 800px;
+    margin-top: 16px;
+    border-radius: 4px;
+    border: 1px #c2c2c2 solid;
+}
+
+.footerCard{
+color:#6D6D6D;
+padding: 0;
+
+}
+
+.elipsis{
+    text-align: right;
+}
+
+.tituloCard{
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    padding: 8px; 
+    margin: 0px;
+}
+
+.datePost{
+    color: #6D6D6D;
+    text-align: right;
+    margin: 0px;
+    padding: 0px;
+    padding: 8px; 
+}
+
+h5 p a h6{
+    font-family: Roboto;
+}
+
+#footer{
+     color: #6D6D6D;
+     margin: 0px;
+}
+
+.ellipsis{
+    text-align: right;
+    padding-right: 36px;
+}
+
+.heart{
+    padding-left: 36px;
+}
+
+.card-header{
+    background-color: #fdfdfd;
+}
+
+.navGridCard{
+    margin-top: 70px;
+}
+
+.thirdCard{
+    margin-bottom: 70px;
+}
